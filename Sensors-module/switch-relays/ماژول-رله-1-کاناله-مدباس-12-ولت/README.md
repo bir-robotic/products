@@ -1,7 +1,5 @@
-<h1 align="center">
- برای خرید کالا به سایت [بیر رباتیک](https://bir-robotic.ir/product/%d9%85%d8%a7%da%98%d9%88%d9%84-%d8%b1%d9%84%d9%87-1-%da%a9%d8%a7%d9%86%d8%a7%d9%84%d9%87-%d9%85%d8%af%d8%a8%d8%a7%d8%b3-12-%d9%88%d9%84%d8%aa/) مراجعه کنید.
-  <br>
-</h1>
+<h2 align="center"> برای خرید کالا به سایت [بیر رباتیک](https://bir-robotic.ir/product/%d9%85%d8%a7%da%98%d9%88%d9%84-%d8%b1%d9%84%d9%87-1-%da%a9%d8%a7%d9%86%d8%a7%d9%84%d9%87-%d9%85%d8%af%d8%a8%d8%a7%d8%b3-12-%d9%88%d9%84%d8%aa/) مراجعه کنید.</h2>
+
 
 1 Channel
 
