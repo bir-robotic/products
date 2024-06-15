@@ -4,6 +4,7 @@
 It is a 8-Channels ModbusRTU relay module equipped with mature and stable 8-bit MCU and RS485 level communication chip,adopt standard MODBUS RTU format RS485 communication protocol. It can realize 8bit input signal detection and 8bit relay output. It can be used for digital detection or power control occasions..
 
 2.Features:
+
 1>.Support Modbus RTU protocol
 2>.Support RS485/TTL UART interface
 3>.Output indicator in multi mode
@@ -32,11 +33,15 @@ It is a 8-Channels ModbusRTU relay module equipped with mature and stable 8-bit 
 
 4.MODBUS RTU Command:
 1>.Baud rate: 9600,8,None,1
+
 /****************Set Device Address**************************************************/
+
 2>.Set device address to 0x01: 00 10 00 00 00 01 02 00 01 6A 00
 3>.Set device address to 0x02: 00 10 00 00 00 01 02 00 02 2A 01
 4>.Set device address to 0x03: 00 10 00 00 00 01 02 00 03 EB C1
+
 /****************Command Format****************************************************/
+
 5>.Read device address: 00 03 00 00 00 01 85 db
 Return:00 03 02 00 01 44 44 //01 is device address.
 6>.Set command format: 
@@ -47,6 +52,7 @@ Note_3:The 3rd and 4th byte are relay/register addresses. So it can be 0x0000, 0
 Note_4:The 5th and 6th byte are relay/register data. 01 means turn ON relay and 00 means turn OFF relay.
 Note_5:The 7th and 8th byte are CRC code.
 /****************Turn ON/OFF Relay*************************************************/
+
 7>.Turn ON 0# relay: 01 05 00 00 FF 00 8C 3A
 Turn OFF 0# relay: 01 05 00 00 00 00 CD CA
 8>.Turn ON 1# relay: 01 05 00 01 FF 00 DD FA
@@ -63,7 +69,9 @@ Turn OFF 5# relay: 01 05 00 05 00 00 DD CB
 Turn OFF 6# relay: 01 05 00 06 00 00 2D CB
 14>.Turn ON 7# relay: 01 05 00 07 FF 00 3D FB
 Turn OFF 7# relay: 01 05 00 07 00 00 7C 0B
+
 /****************Read Relay Status***************************************************/
+
 15>.Read 0# relay status: 01 01 00 00 00 01 FD CA
 16>.Read 1# relay status: 01 01 00 01 00 01 AC 0A
 17>.Read 2# relay status: 01 01 00 02 00 01 5C 0A
@@ -73,7 +81,9 @@ Turn OFF 7# relay: 01 05 00 07 00 00 7C 0B
 21>.Read 6# relay status: 01 01 00 06 00 01 1D CB
 23>.Read 7# relay status: 01 01 00 07 00 01 4C 0B
 24>.Read all relay status: 01 01 00 00 00 08 3D CC
+
 /****************Turn ON Delay Mode************************************************/
+
 25>.Function: Relay will turn ON for a delay time and then turn OFF.
 26>.The unit of delay time is 100ms[It means 1 is 100ms]
 27>.Control 1# device 0# relay: 01 05 02 00 07 00 CE 42 //7*100ms = 700ms
@@ -82,7 +92,9 @@ Turn OFF 7# relay: 01 05 00 07 00 00 7C 0B
 30>.Control 2# device 1# relay: 02 05 02 01 06 00 9E 21  //600MS
 31>.Turn ON all relay: 01 0F 00 00 00 08 01 00 FE 95
 32>.Turn ON all relay: 01 0F 00 00 00 08 01 FF BE D5
+
 /****************Reverse Output State************************************************/
+
 33>.Reverse 0# relay: 01 05 00 00 55 00 F2 9A
 34>.Reverse 1# relay: 01 05 00 01 55 00 A3 5A
 35>.Reverse 2# relay: 01 05 00 02 55 00 53 5A
@@ -92,7 +104,9 @@ Turn OFF 7# relay: 01 05 00 07 00 00 7C 0B
 49>.Reverse 6# relay: 01 05 00 06 55 00 12 9B
 40>.Reverse 7# relay: 01 05 00 07 55 00 43 5B
 41>.Reverse all relay: 01 05 00 00 5A 00 F7 6A
+
 /****************Read 8-Bit Input State***********************************************/
+
 42>.Send: 01 02 00 00 00 08 79 CC
 43>.Receive:01 02 01 00 A1 88
 
