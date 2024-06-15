@@ -1,4 +1,6 @@
-##8 Channel
+  برای خرید کالا به سایت [بیر رباتیک](https://bir-robotic.ir/product/%d9%85%d8%a7%da%98%d9%88%d9%84-%d8%b1%d9%84%d9%87-8-%da%a9%d8%a7%d9%86%d8%a7%d9%84%d9%87-%d9%85%d8%af%d8%a8%d8%a7%d8%b3-12-%d9%88%d9%84%d8%aa/) مراجعه کنید.
+
+8 Channel
 
 1.Description:
 It is a 8-Channels ModbusRTU relay module equipped with mature and stable 8-bit MCU and RS485 level communication chip,adopt standard MODBUS RTU format RS485 communication protocol. It can realize 8bit input signal detection and 8bit relay output. It can be used for digital detection or power control occasions..
